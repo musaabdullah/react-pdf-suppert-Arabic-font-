@@ -1,7 +1,5 @@
 # Getting Started with Create React App
 
-![Screenshot_2021-03-23 React App](https://user-images.githubusercontent.com/60151264/112107535-bd87c600-8bb7-11eb-9bf0-0c8ee1e1a121.png)
-
 ## Available Scripts
 
 In the project directory, you can run:
