@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 const MyDocument = () => (
   <Document style={{ direction: "rtl" }} file={"musa"}>
     <Page size="A4" style={styles.page}>
-      <Text>
+      <Text style={{ padding: 10 }}>
         لقسم او الصفحة أو الموقع. هذا نص تجريبي لاختبار شكل و حجم النصوص و طريقة
         عرضها في هذا المكان و حجم و لون الخط حيث يتم التحكم في هذا النص وامكانية
         تغييرة في اي وقت عن طريق ادارة الموقع{" "}

@@ -1,11 +1,24 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { PDFViewer } from "@react-pdf/renderer";
-import MyDocument from "./MyDocument";
+
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ViewerPDF from "./ViewerPDF";
 const App = () => (
-  <PDFViewer style={{ width: "100%", height: "97vh" }}>
-    <MyDocument />
-  </PDFViewer>
+  <div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <div>
+            <a target="_blank" href="/home">
+              طباعة
+            </a>
+          </div>
+        </Route>
+        <Route path="/home">
+          <ViewerPDF />
+        </Route>
+      </Switch>
+    </Router>
+  </div>
 );
 
 export default App;
